@@ -1,20 +1,18 @@
 <template>
     
     <div class="album">
-        <img :src="albums.poster" class="box-img" alt="">
-        <p class="text-title">{{albums.title}}</p>
-        <p class="text-author">{{albums.author}}</p>
-        <p class="text-years">{{albums.year}}</p>
+        <img :src="album.poster" class="box-img" alt="">
+        <p class="text-title">{{album.title}}</p>
+        <p class="text-author">{{album.author}}</p>
+        <p class="text-years">{{album.year}}</p>
     </div>
-        
-    
 </template>
 
 
 <script>
 export default {
     props: {
-        albums: Object
+        album: Object
     }
     
 }
